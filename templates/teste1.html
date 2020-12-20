@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Página Teste</title>
+    </head>
+    <body>
+        <h1>Teste1</h1>
+        {% if nome in alunos %}
+            <h3 style="color: blue;">{{nome}} matriculado</h3>
+        {% else %}
+        <h3 style="color: red;">{{nome}} não matriculado</h3>
+        {% endif %}
+    </body>
+</html>
