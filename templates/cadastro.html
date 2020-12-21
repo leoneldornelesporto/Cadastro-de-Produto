@@ -1,0 +1,44 @@
+{% extends 'modelo.html' %}
+
+{% block conteudo %}
+<h3>Cadastro de Produtos</h3>
+<hr>
+<form method="post" action="/cadastro" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nome">Nome do Produto:</label>
+      <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="marca">Marca:</label>
+          <input type="text" class="form-control" id="marca" name="marca" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="foto">Foto:</label>
+          <input type="file" class="form-control" id="foto" name="foto" required>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="quant">Quantidade:</label>
+          <input type="text" class="form-control" id="quant" name="quant" required>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="preco">Preço R$:</label>
+          <input type="text" class="form-control" id="preco" name="preco" required>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Gravar Dados</button>
+    <button type="reset" class="btn btn-danger">Limpar Campos</button>
+  </form>
+{% endblock %}
